@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    max-width: 100%;
+    overflow-x: clip;
+    overscroll-behavior-x: none;
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: contain;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #170b05;
+    background-image: 
+      radial-gradient(at 10% 10%, rgba(249, 115, 22, 0.22) 0px, transparent 45%),
+      radial-gradient(at 90% 10%, rgba(234, 88, 12, 0.25) 0px, transparent 45%),
+      radial-gradient(at 50% 50%, rgba(194, 65, 12, 0.15) 0px, transparent 55%),
+      radial-gradient(at 90% 90%, rgba(251, 146, 60, 0.18) 0px, transparent 50%),
+      radial-gradient(at 10% 90%, rgba(154, 52, 18, 0.20) 0px, transparent 50%),
+      linear-gradient(180deg, #1c0c05 0%, #140803 50%, #0d0402 100%);
+    color: #fffbeb;
+  }
+
+  #root {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  /* Tabular numbers for all financial figures and game counters */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom warm orange scrollbars for data tables and logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #170b05;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c2d12;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2410c;
+}
+
+/* Continuous Market Wire Marquee Animation (contained GPU transform) */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

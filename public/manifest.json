@@ -1,0 +1,55 @@
+{
+  "id": "/",
+  "name": "Business Tycoon: Industrial Division",
+  "short_name": "BizTycoon39",
+  "description": "A high-stakes corporate strategy and industrial tycoon simulation game with 39 players, 12 levels, and Dalal Street IPO.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#ea580c",
+  "background_color": "#170b05",
+  "categories": ["games", "strategy", "finance", "simulation"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Business Tycoon Industrial Division Boardroom & Manufacturing Plant"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mandi Procurement and 39-Player Leaderboard"
+    }
+  ]
+}

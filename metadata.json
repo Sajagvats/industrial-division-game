@@ -1,0 +1,6 @@
+{
+  "name": "Business Tycoon: Industrial Division",
+  "description": "A high-stakes corporate strategy and industrial tycoon simulation game. Manage raw material sourcing, factory operations, dynamic pricing, and defeat rival corporations in annual financial audits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
